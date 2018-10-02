@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Suleyman">
+    <meta name="keywords" content="blogs,articles,programming information">
+    <title>Simple blog app</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+    body{
+        background-color: rgb(40, 48, 155);
+    }
+    .container{
+        width: 96%;
+        margin: 40px auto;
+        height: 1000px;
+        background-color: #7e2323;
+    }
+    .left_blog{
+       width:  15%;
+       background-color: green;
+       
+    }
+    .left_blog,.main_container{
+        display: inline-block;
+    }
+    img{
+        width: 100%;
+    }
+    .img_logo{
+        width: 75%;
+        margin: 15%;
+    }
+    .header_info{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="left_blog"> 
+            <header class="">
+                <img class="img_logo" src="img/logo.png" alt="Logo">
+                <p class="header_info" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, commodi?</p>
+            </header>
+             <section class="main_nav ">
+                    <nav>
+                            <ul>
+                                <li>Home</li>
+                                <li>Features</li>
+                                <li>Travel</li>
+                                <li>Music</li>
+                                <li>About</li>
+                            </ul>
+                            
+                        </nav>
+             </section>
+        </section>
+        <main class="main_container"> main content</main>
+
+
+    </div>
+</body>
+</html>

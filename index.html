@@ -6,19 +6,28 @@
     <meta name="keywords" content="blogs,articles,programming information">
     <title>Simple blog app</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/materialdesignicons.min.css ">
     <style>
+
+ :root{
+    --base-color:#C2C4C5;
+}
+
     body{
-        background-color: rgb(40, 48, 155);
+        background-color: #42f4e2;
+        font-family: 'Nunito', sans-serif;
     }
     .container{
         width: 96%;
         margin: 40px auto;
-        height: 1000px;
-        background-color: #7e2323;
+         
+        background-color: whitesmoke;
     }
     .left_blog{
        width:  15%;
-       background-color: green;
+       background-color: cornflowerblue;
        
     }
     .left_blog,.main_container{
@@ -33,7 +42,58 @@
     }
     .header_info{
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 150%;
+        color:var(--base-color);
     }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.3em;
+    }
+    ul>li{
+        margin-bottom: 30px;
+         
+    }
+    .left_footer{
+        text-align: center;
+    }
+    .main_container{
+     vertical-align: top;
+     width: 83%;
+    }
+    .main_wrapper{
+        width: 70%;
+        margin: auto;
+        padding-top: 15px;
+    }
+    .main_wrapper>header>p{
+        line-height: 30px;
+        color:var(--base-color);
+        width: 80%;
+    }
+  
+   .articles_container, .right_man_nav{
+       display: inline-block;
+   }
+   .articles_container{
+       width: 72%;
+       margin-right: 5%;
+   }
+   .right_man_nav{
+       width: 22%;
+       vertical-align: top;
+   }
+   .base_article li{
+    margin: 5px;
+       padding: 0;
+       display: inline-block;
+   }
+
     </style>
 </head>
 <body>
@@ -46,17 +106,96 @@
              <section class="main_nav ">
                     <nav>
                             <ul>
-                                <li>Home</li>
-                                <li>Features</li>
-                                <li>Travel</li>
-                                <li>Music</li>
-                                <li>About</li>
+                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="#">Features</a></li>
+                                <li> <a href="#">Yusif</a></li>
+                                <li> <a href="#">Asif</a></li>
+                                <li> <a href="#">Vasif</a></li>
                             </ul>
                             
                         </nav>
              </section>
+             <footer class="left_footer">
+                <p>2017 &copy &#x54 Blogezy.</p>
+             </footer>
         </section>
-        <main class="main_container"> main content</main>
+        <main class="main_container">  
+            <div class="main_wrapper">
+                    <header>
+                            <h1>News and Stories</h1>
+                            <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.</p>
+                        </header>
+                        <section class="articles_container">
+                         <section class="base_article">
+                             <h2><a href="#">Beautiful Day With Friends In Paris</a></h2>
+                             <ul>
+                                 <li> <i class="mdi mdi-calendar"></i> July 03, 2017</li>
+                                 <li> <i class="mdi mdi-tag-text-outline"></i> Branding, Design</li>
+                                 <li> <i class="mdi mdi-comment-multiple-outline"></i> 3 Comments</li>
+                             </ul>
+                             <img src="img/blog-1.jpg" alt="Man">
+                             <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.
+                                
+                                </p>
+                                <button>Read more</button>
+                            <section class="base_article">
+                             <h2><a href="#">Beautiful Day With Friends In Paris</a></h2>
+                             <ul>
+                                 <li> July 03, 2017</li>
+                                 <li>  Branding, Design</li>
+                                 <li>3 Comments</li>
+                             </ul>
+                             <img src="img/blog-1.jpg" alt="Man">
+                             <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.
+                                
+                                </p>
+                                <button>Read more</button>
+
+                         </section>
+                         <section class="base_article">
+                            <h2><a href="#">Beautiful Day With Friends In Paris</a></h2>
+                            <ul>
+                                <li> <i class="mdi mdi-calendar"></i> July 03, 2017</li>
+                                <li>  Branding, Design</li>
+                                <li>3 Comments</li>
+                            </ul>
+                            <img src="img/blog-1.jpg" alt="Man">
+                            <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.
+                               
+                               </p>
+                               <button>Read more</button>
+
+                        </section>
+                        <section class="base_article">
+                            <h2><a href="#">Beautiful Day With Friends In Paris</a></h2>
+                            <ul>
+                                <li> July 03, 2017</li>
+                                <li>  Branding, Design</li>
+                                <li>3 Comments</li>
+                            </ul>
+                            <img src="img/blog-1.jpg" alt="Man">
+                            <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.
+                               
+                               </p>
+                               <button>Read more</button>
+
+                        </section>
+                         </section>
+                         </section>
+                          
+                         
+                        <section class="right_man_nav">
+<section class="search"> 
+    <input type="text" placeholder="Search..."/>
+</section>
+<section class="about_me">
+    <img class="author_photo" src="img/photo.jpg" alt="Man">
+</section>
+                        </section>
+            </div>
+ 
+
+        </main>
 
 
     </div>
